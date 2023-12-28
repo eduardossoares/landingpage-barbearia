@@ -1,0 +1,500 @@
+:root {
+    --primary-color: #917758;
+    --secundary-color: #3c2915;
+    --primary-light-color: #f5eee6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*********
+**HOME
+**********/
+
+
+.home {
+    position: relative;
+    background-size: cover;
+    background-image: url(../img/bg-home.jpg);
+    height: 100vh; /* vh: viewport hate */
+    background-attachment: fixed;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.home .header .nav ul li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color)
+}
+
+.home .header .nav ul li .logo {
+    margin: 0 35px;
+}
+
+
+/*********
+**HOME - Banner
+**********/
+
+
+.home .header .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 326px;
+    width: 890px;
+    margin-left: -445px;
+    margin-top: -88px;
+    text-align: center;
+    color: #fff;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner .before-h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: var(--primary-color)
+}
+
+.home .banner h1 {
+    font-weight: bold;
+    font-size: 140px;
+    padding: 0;
+    margin: 0;
+}
+
+.home .banner .after-h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/*********
+**ABOUT - Timing
+**********/
+
+.about {
+    background-color: var(--primary-color);
+    height: 680px;
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    width: 33%;
+    background-image: url(../img/brush-big.jpg);
+    padding: 10px;
+    position: relative;
+    top: -50px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.56);
+}
+
+.about .timing .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .overlay .cut-icon {
+    width: 40px;
+}
+
+.about .timing .overlay h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--primary-color);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+}
+
+.about .timing .text {
+    margin: 16px 0;
+}
+
+.about .timing .text::after {
+    font-size: 26px;
+    content: '•';
+    color: #fff;
+    display: block;
+    margin-top: 16px;
+}
+
+.about .timing .text:last-of-type:after {
+    content: '|'
+}
+
+.about .timing .text h4 {
+    color: rgb(194, 194, 194);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about .timing span {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+
+
+/*********
+**ABOUT - Experience
+**********/
+
+
+.about .experience {
+    width: 66%;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 7%;
+    margin-top: 60px;
+}
+
+.about .experience h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*********
+**SERVICES
+**********/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--primary-light-color);
+}
+
+.services h2 {
+    color: var(--secundary-color);
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.services .boxes .box {
+    padding: 80px;
+    border: 1px solid var(--primary-color);
+    margin: 0 10px;
+    border-radius: 20px;
+    transition-duration: 250ms;
+}
+
+.services .boxes .box:hover {
+    padding: 80px;
+    border: 1.5px solid var(--secundary-color);
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.services .boxes .box h4 {
+    color: var(--secundary-color);
+    margin-top: 30px;
+}
+
+.services .boxes .box p {
+    margin-top: 15px;
+}
+
+/*********
+**APPOINTMENT
+**********/
+
+.appointment {
+    background-color: var(--primary-color);
+    height: 75vh;
+    padding-top: 100px;
+    background-image: url('../img/chair-ic.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.appointment h2 {
+    color: var(--primary-light-color);
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.appointment img {
+    margin: 0 auto;
+    display: block;
+}
+
+.appointment form {
+    margin-top: 100px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-around;
+}
+
+.appointment label {
+    display: block;
+    color: var(--primary-light-color);
+    margin-bottom: px;
+}
+
+.appointment .personal-data .input-wrapper input,
+.appointment .personal-data .input-wrapper select,
+.appointment .input-wrapper textarea {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.appointment .personal-data .input-wrapper input::placeholder {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.appointment .input-wrapper .message-label {
+    margin-top: 30px;
+}
+
+.appointment .input-wrapper textarea {
+    width: 90.6%;
+    height: 150px;
+    resize: none;
+}
+
+.appointment .input-wrapper .message-label,
+.appointment .input-wrapper textarea {
+    margin-left: 3.9%;
+}
+
+.appointment button {
+    margin-left: 3.9%;
+    margin-top: 30px;
+    padding: 10px;
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    transition-duration: 500ms;
+}
+
+.appointment button:hover {
+    margin-left: 3.9%;
+    margin-top: 30px;
+    padding: 10.5px;
+    width: 111px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14.5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*********
+**GALLERY
+**********/
+
+.gallery {
+    padding: 80px;
+    background-color: var(--primary-light-color);
+}
+
+.gallery h2 {
+    margin-top: 50px;
+    color: var(--primary-color);
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gallery img {
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery .gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+    border:  10px solid var(--primary-color);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
+
+.gallery .gallery-wrapper .div-img2 {
+    height: 456px;
+    overflow: hidden;
+}
+
+.gallery .gallery-wrapper .img2 {
+    width: 355px;
+}
+
+.gallery .gallery-wrapper .div-img7 {
+    height: 477px;
+    overflow: hidden;
+}
+
+.gallery .gallery-wrapper .img7 {
+    width: 485px;
+}
+
+/*********
+**LOCATION
+**********/
+
+.location {
+    height: 75vh;
+    padding: 100px 0;
+    background: url(../img/bg-location.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.location .head {
+    margin-top: 50px;
+}
+
+.location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .text {
+    color: #fff;
+}
+
+.location .head .info .text span {
+    font-size: 14px;
+    display: block;
+}
+
+.location .head .info .text span:first-child {
+    font-size: 14px;
+    color: silver;
+    display: block;
+}
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+
+.location .map {
+    width: 106.87%;
+}
+
+.location .map iframe{
+    width: 100%;
+}
+
+/*********
+**FOOTER
+**********/
+
+.footer {
+    background-color: #191919;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
