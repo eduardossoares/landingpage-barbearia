@@ -6,7 +6,8 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    box-sizing: border-box;
 }
 
 body {
@@ -53,7 +54,6 @@ body {
 }
 
 .home .header .nav ul li a {
-    font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
@@ -327,18 +327,18 @@ body {
 }
 
 .appointment .input-wrapper textarea {
-    width: 90.6%;
+    width: 91%;
     height: 150px;
     resize: none;
 }
 
 .appointment .input-wrapper .message-label,
 .appointment .input-wrapper textarea {
-    margin-left: 3.9%;
+    margin-left: 4.5%;
 }
 
 .appointment button {
-    margin-left: 3.9%;
+    margin-left: 4.5%;
     margin-top: 30px;
     padding: 10px;
     width: 110px;
@@ -352,15 +352,9 @@ body {
 }
 
 .appointment button:hover {
-    margin-left: 3.9%;
-    margin-top: 30px;
-    padding: 10.5px;
     width: 111px;
-    border: none;
-    border-radius: 5px;
     color: #fff;
     font-size: 14.5px;
-    font-weight: 700;
     cursor: pointer;
 }
 
@@ -406,7 +400,7 @@ body {
 }
 
 .gallery .gallery-wrapper .div-img2 {
-    height: 456px;
+    height: 451px;
     overflow: hidden;
 }
 
@@ -415,7 +409,7 @@ body {
 }
 
 .gallery .gallery-wrapper .div-img7 {
-    height: 477px;
+    height: 470px;
     overflow: hidden;
 }
 
@@ -428,15 +422,11 @@ body {
 **********/
 
 .location {
-    height: 75vh;
+    height: 82vh;
     padding: 100px 0;
     background: url(../img/bg-location.jpg);
     background-size: cover;
     background-attachment: fixed;
-}
-
-.location .head {
-    margin-top: 50px;
 }
 
 .location .head {
@@ -480,7 +470,7 @@ body {
 }
 
 .location .map {
-    width: 106.87%;
+    width: 100%;
 }
 
 .location .map iframe{
@@ -497,4 +487,174 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 12px;
+}
+
+@media (min-width: 700px) and (max-width: 1330px) {
+
+    .home {
+        background-position: right;
+        width: 160vh;
+        min-height: 135vh;
+    }
+
+    .home .header .banner {
+        margin-top: 0px;
+    }
+
+    .home .header .nav ul li:nth-child(4) {
+        display: none;
+    }
+
+    .home .header .nav ul li:nth-child(6) {
+        padding: 0 120px;
+    }
+
+
+    .home .header .nav ul li a {
+        margin-top: 25px;
+        font-size: 20px;
+        justify-content: space-around;
+    }
+
+    .home .header .banner {
+        top: 35%
+    }
+    
+    .home .banner .before-h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    width: 625px;
+    text-align: center;
+    margin-left: 118px;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    }
+
+    .home .banner .after-h1 {
+        font-size: 26px;
+    }
+
+    .home .header .banner img {
+        width: 60px;
+    }
+
+    .about {
+        width: 160vh;
+        height: 100vh;
+    }
+
+    .about .timing {
+        width: 40%;
+        top: 17px;
+    }
+
+    .about .experience .text div {
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .about .experience .text img {
+        display: none;
+    }
+
+    .about .experience span {
+        font-size: 25px;
+    }
+
+    .about .experience h2 {
+        font-size: 43px;
+        font-weight: 400;
+    }
+
+    .about .experience .text p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        font-weight: 400;
+    }
+
+    .services {
+        width: 160vh;
+    }
+    
+    .services .boxes .box h4 {
+        font-size: 28px;
+    }
+
+    .services .boxes .box p {
+        font-size: 20px;
+    }
+
+    .appointment {
+        width: 160vh;
+        height: 160vh;
+    }
+
+    .appointment h2 {
+        font-size: 60px;
+    }
+
+    .appointment form .personal-data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment form .personal-data .input-wrapper {
+        margin: 10px 0;
+    }
+
+    .appointment form .personal-data .input-wrapper input,
+    .appointment form .personal-data .input-wrapper select,
+    .appointment form .input-wrapper textarea {
+        margin: 10px 30vh;
+        width: 100vh;
+        padding: 27px;
+        font-size: 24px;
+    }
+
+    .appointment form .personal-data .input-wrapper label,
+    .appointment form .input-wrapper .message-label {
+        margin-left: 30vh;
+        font-size: 24px;
+    }
+
+    .appointment form {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment button {
+        margin-left: 38.5%;
+        margin-top: 87px;
+        padding: 2vh;
+        width: 40vh;
+        font-size: 38px;
+    }
+
+    .gallery {
+        width: 160vh;
+    }
+
+    .gallery h2 {
+        font-size: 70px;
+    }
+
+    .location {
+        width: 160vh;
+        height: 90vh;
+    }
+
+    .location .head {
+        margin-top: 0px;
+    }
+
+    .location .map {
+        width: 100%;
+    }
+
+    .footer {
+        width: 160vh;
+        font-size: 25px;
+    }
 }
