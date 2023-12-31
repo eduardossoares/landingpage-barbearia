@@ -1,6 +1,6 @@
 # BarberShop Landing Page
 
-Bem-vindo à BarberShop, a sua barbearia fictícia de confiança! Esta landing page foi criada utilizando apenas HTML e CSS para proporcionar uma experiência visual atraente, responsiva e informativa sobre os serviços oferecidos pela nossa barbearia.
+Bem-vindo à BarberShop, a sua barbearia fictícia de confiança! Esta landing page foi criada utilizando apenas HTML e CSS para proporcionar uma experiência visual atraente e informativa sobre os serviços oferecidos pela nossa barbearia.
 
 ## Layout Desktop:
 ![Screenshot_1](https://github.com/eduardossoares/landingpage-barbearia/assets/128731192/1b34ea91-fbbc-4dea-a6a7-e87a2af75394)
