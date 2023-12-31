@@ -489,6 +489,248 @@ body {
     font-size: 12px;
 }
 
+@media (max-width: 700px) {
+    .home {
+        background-position: 82%;
+        width: 160vh;
+        height: 301vh;
+    }
+
+    .home .header .banner {
+        margin-top: 45vh;
+    }
+
+    .home .header .nav ul li {
+        display: none;
+    }
+
+    .home .header .banner {
+        top: 5%
+    }
+    
+    .home .banner .before-h1 {
+    text-transform: uppercase;
+    font-size: 85px;
+    font-weight: 400;
+    width: 865px;
+    text-align: center;
+    margin-left: 41px;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    }
+
+    .home .banner h1 {
+        font-size: 30vh;
+        margin-top: 10vh;
+    }
+
+    .home .banner .after-h1 {
+        font-size: 58px;
+        margin-top: 5vh;
+    }
+
+    .home .header .banner img {
+        width: 155px;
+        margin-top: 5vh;
+    }
+
+    .about {
+        width: 160vh;
+        height: 300vh;
+    }
+
+    .about .timing {
+        display: none;
+    }
+
+    .about .experience {
+        margin-top: 150px;
+    }
+
+    .about .experience .text div {
+        width: 141vh;
+        margin-left: 89px;
+    }
+
+    .about .experience .text img {
+        display: none;
+    }
+
+    .about .experience span {
+        font-size: 58px;
+    }
+
+    .about .experience h2 {
+        font-size: 140px;
+        font-weight: 400;
+    }
+
+    .about .experience h2:after {
+        width: 48vh;
+        height: 6px;
+    }
+
+    .about .experience .text p {
+        margin: 70px auto;
+        text-align: justify;
+        font-size: 48px;
+        font-weight: 400;
+    }
+
+    .services {
+        width: 160vh;
+        height: 530vh;
+    }
+
+    .services h2 {
+        font-size: 130px;
+    }
+
+    .services .container:nth-child(2) {
+        width: 340px;
+    }
+
+    .services .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .boxes .box {
+        width: 90vh;
+        height: 140vh;   
+        margin: 5vh 0;     
+    }
+
+    .services .boxes .box h4 {
+        font-size: 61px;
+    }
+
+    .services .boxes .box p {
+        font-size: 42px;
+        margin-top: 10vh;
+    }
+
+    .services .boxes .box img {
+        width: 15vh;
+    }
+
+    .services .boxes .box img:nth-child(3) {
+        width: 10vh;
+        margin-top: 10vh;
+    }
+
+    .appointment {
+        width: 160vh;
+        height: 300vh;
+    }
+
+    .appointment h2 {
+        font-size: 120px;
+    }
+
+    .appointment img:nth-child(2) {
+        width: 40vh;
+        margin-top: 50px;
+    }
+
+    .appointment form .personal-data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment form .personal-data .input-wrapper {
+        margin: 10px 0;
+    }
+
+    .appointment form .personal-data .input-wrapper input,
+    .appointment form .personal-data .input-wrapper select,
+    .appointment form .input-wrapper textarea {
+        margin: 20px 20vh;
+        width: 120vh;
+        padding: 67px;
+        font-size: 51px;
+    }
+
+    .appointment form .input-wrapper textarea {
+        height: 50vh;
+    }
+
+    .appointment form .personal-data .input-wrapper label,
+    .appointment form .input-wrapper .message-label {
+        margin-left: 20vh;
+        font-size: 46px;
+    }
+
+    .appointment form {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment button {
+        margin-left: 28.5%;
+        margin-top: 87px;
+        padding: 5vh;
+        width: 70vh;
+        font-size: 38px;
+    }
+
+    .appointment button:hover {
+        margin-top: 87px;
+        padding: 5vh;
+        width: 70vh;
+        font-size: 38px;
+    }
+
+    .gallery {
+        width: 100vh;
+        height: 435vh;
+    }
+
+    .gallery h2 {
+        font-size: 140px;
+    }
+
+    .gallery img:nth-child(2) {
+        width: 40vh;
+        margin-top: 20px;
+    }
+
+    .gallery .gallery-wrapper {
+        height: 350vh;
+        width: 425vh;
+    }
+
+    .gallery .gallery-wrapper div {
+        margin-top: 5vh;
+    }
+
+    .gallery .gallery-wrapper div:nth-child(2),
+    .gallery .gallery-wrapper div:nth-child(5),
+    .gallery .gallery-wrapper div:nth-child(7) {
+        display: none;
+    }
+
+    .location {
+        width: 160vh;
+        height: 90vh;
+    }
+
+    .location .head {
+        margin-top: 0px;
+    }
+
+    .location .map {
+        width: 100%;
+    }
+
+    .footer {
+        width: 160vh;
+        font-size: 25px;
+    }
+}
+
 @media (min-width: 700px) and (max-width: 1330px) {
 
     .home {
@@ -629,6 +871,13 @@ body {
         margin-top: 87px;
         padding: 2vh;
         width: 40vh;
+        font-size: 38px;
+    }
+
+    .appointment button:hover {
+        margin-top: 87px;
+        padding: 5vh;
+        width: 70vh;
         font-size: 38px;
     }
 
